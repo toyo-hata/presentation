@@ -11,3 +11,12 @@ function test(actual, expected) {
       console.trace();
     }
   }
+
+function selectButton() {
+  let loc = window.location.pathname;
+  let dir = loc.substring(0, loc.lastIndexOf('/'));
+  window.open(dir + "/ex1/ex1.html");
+}
+
+let target = document.getElementById("ex1");
+target.addEventListener("click", selectButton);
