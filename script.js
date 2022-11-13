@@ -20,3 +20,13 @@ function selectButton() {
 
 let target = document.getElementById("ex1");
 target.addEventListener("click", selectButton);
+
+
+function selectButton2() {
+  let loc = window.location.pathname;
+  let dir = loc.substring(0, loc.lastIndexOf('/'));
+  window.open(dir + "/ex2/ex2.html");
+}
+
+let target2 = document.getElementById("ex2");
+target2.addEventListener("click", selectButton2);
